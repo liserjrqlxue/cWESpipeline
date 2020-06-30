@@ -20,6 +20,6 @@ gatk \
   
   gatk \
   MakeSitesOnlyVcf \
-  -I $Workdir/gatk/$sampleID.variant_filtered.vcf.gz \
-  -O $Workdir/gatk/$sampleID.sites_only.variant_filtered.vcf.gz \
+  -I ${vcf_basename}.variant_filtered.vcf.gz \
+  -O ${vcf_basename}.sites_only.variant_filtered.vcf.gz \
   --showHidden
