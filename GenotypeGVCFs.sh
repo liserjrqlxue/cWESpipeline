@@ -14,5 +14,7 @@ gatk \
   -R $ref \
   -O ${vcf_basename}.vcf.gz \
   -V ${vcf_basename}.g.vcf.gz \
-  -L $interval_list \
+  -L $interval_list -ip 500 \
+  -G StandardAnnotation \
+  -stand-call-conf 0.0 \
   --showHidden
